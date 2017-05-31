@@ -1,0 +1,1945 @@
+Actions
+Fly 0 1 2 
+   precond: Cargo 0 , Airport 1 , At 0 1 , 
+   add: At 0 2 , 
+   delete: At 0 1 , 
+
+
+Initial
+
+At B DTW 
+Airport SFO 
+Airport JFK 
+Cargo B 
+Airport DTW 
+Cargo A 
+Cargo C 
+At A SFO 
+Airport LAX 
+At C JFK 
+
+Goal
+
+At C SFO 
+At B LAX 
+At A DTW 
+
+
+start forward search
+
+number of arguments for action:  3
+Fly A JFK C 
+   precond: Cargo A , Airport JFK , At A JFK , 
+   add: At A C , 
+   delete: At A JFK , 
+
+Fly A JFK B 
+   precond: Cargo A , Airport JFK , At A JFK , 
+   add: At A B , 
+   delete: At A JFK , 
+
+Fly A JFK LAX 
+   precond: Cargo A , Airport JFK , At A JFK , 
+   add: At A LAX , 
+   delete: At A JFK , 
+
+Fly A JFK SFO 
+   precond: Cargo A , Airport JFK , At A JFK , 
+   add: At A SFO , 
+   delete: At A JFK , 
+
+Fly A JFK DTW 
+   precond: Cargo A , Airport JFK , At A JFK , 
+   add: At A DTW , 
+   delete: At A JFK , 
+
+Fly A C JFK 
+   precond: Cargo A , At A C , Airport C , 
+   add: At A JFK , 
+   delete: At A C , 
+
+Fly A C B 
+   precond: Cargo A , At A C , Airport C , 
+   add: At A B , 
+   delete: At A C , 
+
+Fly A C LAX 
+   precond: Cargo A , At A C , Airport C , 
+   add: At A LAX , 
+   delete: At A C , 
+
+Fly A C SFO 
+   precond: Cargo A , At A C , Airport C , 
+   add: At A SFO , 
+   delete: At A C , 
+
+Fly A C DTW 
+   precond: Cargo A , At A C , Airport C , 
+   add: At A DTW , 
+   delete: At A C , 
+
+Fly A B JFK 
+   precond: Cargo A , At A B , Airport B , 
+   add: At A JFK , 
+   delete: At A B , 
+
+Fly A B C 
+   precond: Cargo A , At A B , Airport B , 
+   add: At A C , 
+   delete: At A B , 
+
+Fly A B LAX 
+   precond: Cargo A , At A B , Airport B , 
+   add: At A LAX , 
+   delete: At A B , 
+
+Fly A B SFO 
+   precond: Cargo A , At A B , Airport B , 
+   add: At A SFO , 
+   delete: At A B , 
+
+Fly A B DTW 
+   precond: Cargo A , At A B , Airport B , 
+   add: At A DTW , 
+   delete: At A B , 
+
+Fly A LAX JFK 
+   precond: Airport LAX , Cargo A , At A LAX , 
+   add: At A JFK , 
+   delete: At A LAX , 
+
+Fly A LAX C 
+   precond: Airport LAX , Cargo A , At A LAX , 
+   add: At A C , 
+   delete: At A LAX , 
+
+Fly A LAX B 
+   precond: Airport LAX , Cargo A , At A LAX , 
+   add: At A B , 
+   delete: At A LAX , 
+
+Fly A LAX SFO 
+   precond: Airport LAX , Cargo A , At A LAX , 
+   add: At A SFO , 
+   delete: At A LAX , 
+
+Fly A LAX DTW 
+   precond: Airport LAX , Cargo A , At A LAX , 
+   add: At A DTW , 
+   delete: At A LAX , 
+
+Fly A SFO JFK 
+   precond: Cargo A , Airport SFO , At A SFO , 
+   add: At A JFK , 
+   delete: At A SFO , 
+
+Fly A SFO C 
+   precond: Cargo A , Airport SFO , At A SFO , 
+   add: At A C , 
+   delete: At A SFO , 
+
+Fly A SFO B 
+   precond: Cargo A , Airport SFO , At A SFO , 
+   add: At A B , 
+   delete: At A SFO , 
+
+Fly A SFO LAX 
+   precond: Cargo A , Airport SFO , At A SFO , 
+   add: At A LAX , 
+   delete: At A SFO , 
+
+Fly A SFO DTW 
+   precond: Cargo A , Airport SFO , At A SFO , 
+   add: At A DTW , 
+   delete: At A SFO , 
+
+Fly A DTW JFK 
+   precond: Airport DTW , Cargo A , At A DTW , 
+   add: At A JFK , 
+   delete: At A DTW , 
+
+Fly A DTW C 
+   precond: Airport DTW , Cargo A , At A DTW , 
+   add: At A C , 
+   delete: At A DTW , 
+
+Fly A DTW B 
+   precond: Airport DTW , Cargo A , At A DTW , 
+   add: At A B , 
+   delete: At A DTW , 
+
+Fly A DTW LAX 
+   precond: Airport DTW , Cargo A , At A DTW , 
+   add: At A LAX , 
+   delete: At A DTW , 
+
+Fly A DTW SFO 
+   precond: Airport DTW , Cargo A , At A DTW , 
+   add: At A SFO , 
+   delete: At A DTW , 
+
+Fly JFK A C 
+   precond: Cargo JFK , Airport A , At JFK A , 
+   add: At JFK C , 
+   delete: At JFK A , 
+
+Fly JFK A B 
+   precond: Cargo JFK , Airport A , At JFK A , 
+   add: At JFK B , 
+   delete: At JFK A , 
+
+Fly JFK A LAX 
+   precond: Cargo JFK , Airport A , At JFK A , 
+   add: At JFK LAX , 
+   delete: At JFK A , 
+
+Fly JFK A SFO 
+   precond: Cargo JFK , Airport A , At JFK A , 
+   add: At JFK SFO , 
+   delete: At JFK A , 
+
+Fly JFK A DTW 
+   precond: Cargo JFK , Airport A , At JFK A , 
+   add: At JFK DTW , 
+   delete: At JFK A , 
+
+Fly JFK C A 
+   precond: Cargo JFK , At JFK C , Airport C , 
+   add: At JFK A , 
+   delete: At JFK C , 
+
+Fly JFK C B 
+   precond: Cargo JFK , At JFK C , Airport C , 
+   add: At JFK B , 
+   delete: At JFK C , 
+
+Fly JFK C LAX 
+   precond: Cargo JFK , At JFK C , Airport C , 
+   add: At JFK LAX , 
+   delete: At JFK C , 
+
+Fly JFK C SFO 
+   precond: Cargo JFK , At JFK C , Airport C , 
+   add: At JFK SFO , 
+   delete: At JFK C , 
+
+Fly JFK C DTW 
+   precond: Cargo JFK , At JFK C , Airport C , 
+   add: At JFK DTW , 
+   delete: At JFK C , 
+
+Fly JFK B A 
+   precond: Cargo JFK , At JFK B , Airport B , 
+   add: At JFK A , 
+   delete: At JFK B , 
+
+Fly JFK B C 
+   precond: Cargo JFK , At JFK B , Airport B , 
+   add: At JFK C , 
+   delete: At JFK B , 
+
+Fly JFK B LAX 
+   precond: Cargo JFK , At JFK B , Airport B , 
+   add: At JFK LAX , 
+   delete: At JFK B , 
+
+Fly JFK B SFO 
+   precond: Cargo JFK , At JFK B , Airport B , 
+   add: At JFK SFO , 
+   delete: At JFK B , 
+
+Fly JFK B DTW 
+   precond: Cargo JFK , At JFK B , Airport B , 
+   add: At JFK DTW , 
+   delete: At JFK B , 
+
+Fly JFK LAX A 
+   precond: Airport LAX , Cargo JFK , At JFK LAX , 
+   add: At JFK A , 
+   delete: At JFK LAX , 
+
+Fly JFK LAX C 
+   precond: Airport LAX , Cargo JFK , At JFK LAX , 
+   add: At JFK C , 
+   delete: At JFK LAX , 
+
+Fly JFK LAX B 
+   precond: Airport LAX , Cargo JFK , At JFK LAX , 
+   add: At JFK B , 
+   delete: At JFK LAX , 
+
+Fly JFK LAX SFO 
+   precond: Airport LAX , Cargo JFK , At JFK LAX , 
+   add: At JFK SFO , 
+   delete: At JFK LAX , 
+
+Fly JFK LAX DTW 
+   precond: Airport LAX , Cargo JFK , At JFK LAX , 
+   add: At JFK DTW , 
+   delete: At JFK LAX , 
+
+Fly JFK SFO A 
+   precond: Cargo JFK , Airport SFO , At JFK SFO , 
+   add: At JFK A , 
+   delete: At JFK SFO , 
+
+Fly JFK SFO C 
+   precond: Cargo JFK , Airport SFO , At JFK SFO , 
+   add: At JFK C , 
+   delete: At JFK SFO , 
+
+Fly JFK SFO B 
+   precond: Cargo JFK , Airport SFO , At JFK SFO , 
+   add: At JFK B , 
+   delete: At JFK SFO , 
+
+Fly JFK SFO LAX 
+   precond: Cargo JFK , Airport SFO , At JFK SFO , 
+   add: At JFK LAX , 
+   delete: At JFK SFO , 
+
+Fly JFK SFO DTW 
+   precond: Cargo JFK , Airport SFO , At JFK SFO , 
+   add: At JFK DTW , 
+   delete: At JFK SFO , 
+
+Fly JFK DTW A 
+   precond: Airport DTW , Cargo JFK , At JFK DTW , 
+   add: At JFK A , 
+   delete: At JFK DTW , 
+
+Fly JFK DTW C 
+   precond: Airport DTW , Cargo JFK , At JFK DTW , 
+   add: At JFK C , 
+   delete: At JFK DTW , 
+
+Fly JFK DTW B 
+   precond: Airport DTW , Cargo JFK , At JFK DTW , 
+   add: At JFK B , 
+   delete: At JFK DTW , 
+
+Fly JFK DTW LAX 
+   precond: Airport DTW , Cargo JFK , At JFK DTW , 
+   add: At JFK LAX , 
+   delete: At JFK DTW , 
+
+Fly JFK DTW SFO 
+   precond: Airport DTW , Cargo JFK , At JFK DTW , 
+   add: At JFK SFO , 
+   delete: At JFK DTW , 
+
+Fly C A JFK 
+   precond: At C A , Airport A , Cargo C , 
+   add: At C JFK , 
+   delete: At C A , 
+
+Fly C A B 
+   precond: At C A , Airport A , Cargo C , 
+   add: At C B , 
+   delete: At C A , 
+
+Fly C A LAX 
+   precond: At C A , Airport A , Cargo C , 
+   add: At C LAX , 
+   delete: At C A , 
+
+Fly C A SFO 
+   precond: At C A , Airport A , Cargo C , 
+   add: At C SFO , 
+   delete: At C A , 
+
+Fly C A DTW 
+   precond: At C A , Airport A , Cargo C , 
+   add: At C DTW , 
+   delete: At C A , 
+
+Fly C JFK A 
+   precond: At C JFK , Airport JFK , Cargo C , 
+   add: At C A , 
+   delete: At C JFK , 
+
+Fly C JFK B 
+   precond: At C JFK , Airport JFK , Cargo C , 
+   add: At C B , 
+   delete: At C JFK , 
+
+Fly C JFK LAX 
+   precond: At C JFK , Airport JFK , Cargo C , 
+   add: At C LAX , 
+   delete: At C JFK , 
+
+Fly C JFK SFO 
+   precond: At C JFK , Airport JFK , Cargo C , 
+   add: At C SFO , 
+   delete: At C JFK , 
+
+Fly C JFK DTW 
+   precond: At C JFK , Airport JFK , Cargo C , 
+   add: At C DTW , 
+   delete: At C JFK , 
+
+Fly C B A 
+   precond: At C B , Cargo C , Airport B , 
+   add: At C A , 
+   delete: At C B , 
+
+Fly C B JFK 
+   precond: At C B , Cargo C , Airport B , 
+   add: At C JFK , 
+   delete: At C B , 
+
+Fly C B LAX 
+   precond: At C B , Cargo C , Airport B , 
+   add: At C LAX , 
+   delete: At C B , 
+
+Fly C B SFO 
+   precond: At C B , Cargo C , Airport B , 
+   add: At C SFO , 
+   delete: At C B , 
+
+Fly C B DTW 
+   precond: At C B , Cargo C , Airport B , 
+   add: At C DTW , 
+   delete: At C B , 
+
+Fly C LAX A 
+   precond: Airport LAX , Cargo C , At C LAX , 
+   add: At C A , 
+   delete: At C LAX , 
+
+Fly C LAX JFK 
+   precond: Airport LAX , Cargo C , At C LAX , 
+   add: At C JFK , 
+   delete: At C LAX , 
+
+Fly C LAX B 
+   precond: Airport LAX , Cargo C , At C LAX , 
+   add: At C B , 
+   delete: At C LAX , 
+
+Fly C LAX SFO 
+   precond: Airport LAX , Cargo C , At C LAX , 
+   add: At C SFO , 
+   delete: At C LAX , 
+
+Fly C LAX DTW 
+   precond: Airport LAX , Cargo C , At C LAX , 
+   add: At C DTW , 
+   delete: At C LAX , 
+
+Fly C SFO A 
+   precond: At C SFO , Airport SFO , Cargo C , 
+   add: At C A , 
+   delete: At C SFO , 
+
+Fly C SFO JFK 
+   precond: At C SFO , Airport SFO , Cargo C , 
+   add: At C JFK , 
+   delete: At C SFO , 
+
+Fly C SFO B 
+   precond: At C SFO , Airport SFO , Cargo C , 
+   add: At C B , 
+   delete: At C SFO , 
+
+Fly C SFO LAX 
+   precond: At C SFO , Airport SFO , Cargo C , 
+   add: At C LAX , 
+   delete: At C SFO , 
+
+Fly C SFO DTW 
+   precond: At C SFO , Airport SFO , Cargo C , 
+   add: At C DTW , 
+   delete: At C SFO , 
+
+Fly C DTW A 
+   precond: Airport DTW , Cargo C , At C DTW , 
+   add: At C A , 
+   delete: At C DTW , 
+
+Fly C DTW JFK 
+   precond: Airport DTW , Cargo C , At C DTW , 
+   add: At C JFK , 
+   delete: At C DTW , 
+
+Fly C DTW B 
+   precond: Airport DTW , Cargo C , At C DTW , 
+   add: At C B , 
+   delete: At C DTW , 
+
+Fly C DTW LAX 
+   precond: Airport DTW , Cargo C , At C DTW , 
+   add: At C LAX , 
+   delete: At C DTW , 
+
+Fly C DTW SFO 
+   precond: Airport DTW , Cargo C , At C DTW , 
+   add: At C SFO , 
+   delete: At C DTW , 
+
+Fly B A JFK 
+   precond: Airport A , At B A , Cargo B , 
+   add: At B JFK , 
+   delete: At B A , 
+
+Fly B A C 
+   precond: Airport A , At B A , Cargo B , 
+   add: At B C , 
+   delete: At B A , 
+
+Fly B A LAX 
+   precond: Airport A , At B A , Cargo B , 
+   add: At B LAX , 
+   delete: At B A , 
+
+Fly B A SFO 
+   precond: Airport A , At B A , Cargo B , 
+   add: At B SFO , 
+   delete: At B A , 
+
+Fly B A DTW 
+   precond: Airport A , At B A , Cargo B , 
+   add: At B DTW , 
+   delete: At B A , 
+
+Fly B JFK A 
+   precond: Airport JFK , At B JFK , Cargo B , 
+   add: At B A , 
+   delete: At B JFK , 
+
+Fly B JFK C 
+   precond: Airport JFK , At B JFK , Cargo B , 
+   add: At B C , 
+   delete: At B JFK , 
+
+Fly B JFK LAX 
+   precond: Airport JFK , At B JFK , Cargo B , 
+   add: At B LAX , 
+   delete: At B JFK , 
+
+Fly B JFK SFO 
+   precond: Airport JFK , At B JFK , Cargo B , 
+   add: At B SFO , 
+   delete: At B JFK , 
+
+Fly B JFK DTW 
+   precond: Airport JFK , At B JFK , Cargo B , 
+   add: At B DTW , 
+   delete: At B JFK , 
+
+Fly B C A 
+   precond: At B C , Airport C , Cargo B , 
+   add: At B A , 
+   delete: At B C , 
+
+Fly B C JFK 
+   precond: At B C , Airport C , Cargo B , 
+   add: At B JFK , 
+   delete: At B C , 
+
+Fly B C LAX 
+   precond: At B C , Airport C , Cargo B , 
+   add: At B LAX , 
+   delete: At B C , 
+
+Fly B C SFO 
+   precond: At B C , Airport C , Cargo B , 
+   add: At B SFO , 
+   delete: At B C , 
+
+Fly B C DTW 
+   precond: At B C , Airport C , Cargo B , 
+   add: At B DTW , 
+   delete: At B C , 
+
+Fly B LAX A 
+   precond: Airport LAX , At B LAX , Cargo B , 
+   add: At B A , 
+   delete: At B LAX , 
+
+Fly B LAX JFK 
+   precond: Airport LAX , At B LAX , Cargo B , 
+   add: At B JFK , 
+   delete: At B LAX , 
+
+Fly B LAX C 
+   precond: Airport LAX , At B LAX , Cargo B , 
+   add: At B C , 
+   delete: At B LAX , 
+
+Fly B LAX SFO 
+   precond: Airport LAX , At B LAX , Cargo B , 
+   add: At B SFO , 
+   delete: At B LAX , 
+
+Fly B LAX DTW 
+   precond: Airport LAX , At B LAX , Cargo B , 
+   add: At B DTW , 
+   delete: At B LAX , 
+
+Fly B SFO A 
+   precond: Airport SFO , Cargo B , At B SFO , 
+   add: At B A , 
+   delete: At B SFO , 
+
+Fly B SFO JFK 
+   precond: Airport SFO , Cargo B , At B SFO , 
+   add: At B JFK , 
+   delete: At B SFO , 
+
+Fly B SFO C 
+   precond: Airport SFO , Cargo B , At B SFO , 
+   add: At B C , 
+   delete: At B SFO , 
+
+Fly B SFO LAX 
+   precond: Airport SFO , Cargo B , At B SFO , 
+   add: At B LAX , 
+   delete: At B SFO , 
+
+Fly B SFO DTW 
+   precond: Airport SFO , Cargo B , At B SFO , 
+   add: At B DTW , 
+   delete: At B SFO , 
+
+Fly B DTW A 
+   precond: Airport DTW , At B DTW , Cargo B , 
+   add: At B A , 
+   delete: At B DTW , 
+
+Fly B DTW JFK 
+   precond: Airport DTW , At B DTW , Cargo B , 
+   add: At B JFK , 
+   delete: At B DTW , 
+
+Fly B DTW C 
+   precond: Airport DTW , At B DTW , Cargo B , 
+   add: At B C , 
+   delete: At B DTW , 
+
+Fly B DTW LAX 
+   precond: Airport DTW , At B DTW , Cargo B , 
+   add: At B LAX , 
+   delete: At B DTW , 
+
+Fly B DTW SFO 
+   precond: Airport DTW , At B DTW , Cargo B , 
+   add: At B SFO , 
+   delete: At B DTW , 
+
+Fly LAX A JFK 
+   precond: At LAX A , Airport A , Cargo LAX , 
+   add: At LAX JFK , 
+   delete: At LAX A , 
+
+Fly LAX A C 
+   precond: At LAX A , Airport A , Cargo LAX , 
+   add: At LAX C , 
+   delete: At LAX A , 
+
+Fly LAX A B 
+   precond: At LAX A , Airport A , Cargo LAX , 
+   add: At LAX B , 
+   delete: At LAX A , 
+
+Fly LAX A SFO 
+   precond: At LAX A , Airport A , Cargo LAX , 
+   add: At LAX SFO , 
+   delete: At LAX A , 
+
+Fly LAX A DTW 
+   precond: At LAX A , Airport A , Cargo LAX , 
+   add: At LAX DTW , 
+   delete: At LAX A , 
+
+Fly LAX JFK A 
+   precond: At LAX JFK , Airport JFK , Cargo LAX , 
+   add: At LAX A , 
+   delete: At LAX JFK , 
+
+Fly LAX JFK C 
+   precond: At LAX JFK , Airport JFK , Cargo LAX , 
+   add: At LAX C , 
+   delete: At LAX JFK , 
+
+Fly LAX JFK B 
+   precond: At LAX JFK , Airport JFK , Cargo LAX , 
+   add: At LAX B , 
+   delete: At LAX JFK , 
+
+Fly LAX JFK SFO 
+   precond: At LAX JFK , Airport JFK , Cargo LAX , 
+   add: At LAX SFO , 
+   delete: At LAX JFK , 
+
+Fly LAX JFK DTW 
+   precond: At LAX JFK , Airport JFK , Cargo LAX , 
+   add: At LAX DTW , 
+   delete: At LAX JFK , 
+
+Fly LAX C A 
+   precond: At LAX C , Airport C , Cargo LAX , 
+   add: At LAX A , 
+   delete: At LAX C , 
+
+Fly LAX C JFK 
+   precond: At LAX C , Airport C , Cargo LAX , 
+   add: At LAX JFK , 
+   delete: At LAX C , 
+
+Fly LAX C B 
+   precond: At LAX C , Airport C , Cargo LAX , 
+   add: At LAX B , 
+   delete: At LAX C , 
+
+Fly LAX C SFO 
+   precond: At LAX C , Airport C , Cargo LAX , 
+   add: At LAX SFO , 
+   delete: At LAX C , 
+
+Fly LAX C DTW 
+   precond: At LAX C , Airport C , Cargo LAX , 
+   add: At LAX DTW , 
+   delete: At LAX C , 
+
+Fly LAX B A 
+   precond: At LAX B , Airport B , Cargo LAX , 
+   add: At LAX A , 
+   delete: At LAX B , 
+
+Fly LAX B JFK 
+   precond: At LAX B , Airport B , Cargo LAX , 
+   add: At LAX JFK , 
+   delete: At LAX B , 
+
+Fly LAX B C 
+   precond: At LAX B , Airport B , Cargo LAX , 
+   add: At LAX C , 
+   delete: At LAX B , 
+
+Fly LAX B SFO 
+   precond: At LAX B , Airport B , Cargo LAX , 
+   add: At LAX SFO , 
+   delete: At LAX B , 
+
+Fly LAX B DTW 
+   precond: At LAX B , Airport B , Cargo LAX , 
+   add: At LAX DTW , 
+   delete: At LAX B , 
+
+Fly LAX SFO A 
+   precond: At LAX SFO , Airport SFO , Cargo LAX , 
+   add: At LAX A , 
+   delete: At LAX SFO , 
+
+Fly LAX SFO JFK 
+   precond: At LAX SFO , Airport SFO , Cargo LAX , 
+   add: At LAX JFK , 
+   delete: At LAX SFO , 
+
+Fly LAX SFO C 
+   precond: At LAX SFO , Airport SFO , Cargo LAX , 
+   add: At LAX C , 
+   delete: At LAX SFO , 
+
+Fly LAX SFO B 
+   precond: At LAX SFO , Airport SFO , Cargo LAX , 
+   add: At LAX B , 
+   delete: At LAX SFO , 
+
+Fly LAX SFO DTW 
+   precond: At LAX SFO , Airport SFO , Cargo LAX , 
+   add: At LAX DTW , 
+   delete: At LAX SFO , 
+
+Fly LAX DTW A 
+   precond: Airport DTW , At LAX DTW , Cargo LAX , 
+   add: At LAX A , 
+   delete: At LAX DTW , 
+
+Fly LAX DTW JFK 
+   precond: Airport DTW , At LAX DTW , Cargo LAX , 
+   add: At LAX JFK , 
+   delete: At LAX DTW , 
+
+Fly LAX DTW C 
+   precond: Airport DTW , At LAX DTW , Cargo LAX , 
+   add: At LAX C , 
+   delete: At LAX DTW , 
+
+Fly LAX DTW B 
+   precond: Airport DTW , At LAX DTW , Cargo LAX , 
+   add: At LAX B , 
+   delete: At LAX DTW , 
+
+Fly LAX DTW SFO 
+   precond: Airport DTW , At LAX DTW , Cargo LAX , 
+   add: At LAX SFO , 
+   delete: At LAX DTW , 
+
+Fly SFO A JFK 
+   precond: At SFO A , Airport A , Cargo SFO , 
+   add: At SFO JFK , 
+   delete: At SFO A , 
+
+Fly SFO A C 
+   precond: At SFO A , Airport A , Cargo SFO , 
+   add: At SFO C , 
+   delete: At SFO A , 
+
+Fly SFO A B 
+   precond: At SFO A , Airport A , Cargo SFO , 
+   add: At SFO B , 
+   delete: At SFO A , 
+
+Fly SFO A LAX 
+   precond: At SFO A , Airport A , Cargo SFO , 
+   add: At SFO LAX , 
+   delete: At SFO A , 
+
+Fly SFO A DTW 
+   precond: At SFO A , Airport A , Cargo SFO , 
+   add: At SFO DTW , 
+   delete: At SFO A , 
+
+Fly SFO JFK A 
+   precond: Airport JFK , At SFO JFK , Cargo SFO , 
+   add: At SFO A , 
+   delete: At SFO JFK , 
+
+Fly SFO JFK C 
+   precond: Airport JFK , At SFO JFK , Cargo SFO , 
+   add: At SFO C , 
+   delete: At SFO JFK , 
+
+Fly SFO JFK B 
+   precond: Airport JFK , At SFO JFK , Cargo SFO , 
+   add: At SFO B , 
+   delete: At SFO JFK , 
+
+Fly SFO JFK LAX 
+   precond: Airport JFK , At SFO JFK , Cargo SFO , 
+   add: At SFO LAX , 
+   delete: At SFO JFK , 
+
+Fly SFO JFK DTW 
+   precond: Airport JFK , At SFO JFK , Cargo SFO , 
+   add: At SFO DTW , 
+   delete: At SFO JFK , 
+
+Fly SFO C A 
+   precond: Cargo SFO , At SFO C , Airport C , 
+   add: At SFO A , 
+   delete: At SFO C , 
+
+Fly SFO C JFK 
+   precond: Cargo SFO , At SFO C , Airport C , 
+   add: At SFO JFK , 
+   delete: At SFO C , 
+
+Fly SFO C B 
+   precond: Cargo SFO , At SFO C , Airport C , 
+   add: At SFO B , 
+   delete: At SFO C , 
+
+Fly SFO C LAX 
+   precond: Cargo SFO , At SFO C , Airport C , 
+   add: At SFO LAX , 
+   delete: At SFO C , 
+
+Fly SFO C DTW 
+   precond: Cargo SFO , At SFO C , Airport C , 
+   add: At SFO DTW , 
+   delete: At SFO C , 
+
+Fly SFO B A 
+   precond: Cargo SFO , Airport B , At SFO B , 
+   add: At SFO A , 
+   delete: At SFO B , 
+
+Fly SFO B JFK 
+   precond: Cargo SFO , Airport B , At SFO B , 
+   add: At SFO JFK , 
+   delete: At SFO B , 
+
+Fly SFO B C 
+   precond: Cargo SFO , Airport B , At SFO B , 
+   add: At SFO C , 
+   delete: At SFO B , 
+
+Fly SFO B LAX 
+   precond: Cargo SFO , Airport B , At SFO B , 
+   add: At SFO LAX , 
+   delete: At SFO B , 
+
+Fly SFO B DTW 
+   precond: Cargo SFO , Airport B , At SFO B , 
+   add: At SFO DTW , 
+   delete: At SFO B , 
+
+Fly SFO LAX A 
+   precond: Airport LAX , At SFO LAX , Cargo SFO , 
+   add: At SFO A , 
+   delete: At SFO LAX , 
+
+Fly SFO LAX JFK 
+   precond: Airport LAX , At SFO LAX , Cargo SFO , 
+   add: At SFO JFK , 
+   delete: At SFO LAX , 
+
+Fly SFO LAX C 
+   precond: Airport LAX , At SFO LAX , Cargo SFO , 
+   add: At SFO C , 
+   delete: At SFO LAX , 
+
+Fly SFO LAX B 
+   precond: Airport LAX , At SFO LAX , Cargo SFO , 
+   add: At SFO B , 
+   delete: At SFO LAX , 
+
+Fly SFO LAX DTW 
+   precond: Airport LAX , At SFO LAX , Cargo SFO , 
+   add: At SFO DTW , 
+   delete: At SFO LAX , 
+
+Fly SFO DTW A 
+   precond: Airport DTW , At SFO DTW , Cargo SFO , 
+   add: At SFO A , 
+   delete: At SFO DTW , 
+
+Fly SFO DTW JFK 
+   precond: Airport DTW , At SFO DTW , Cargo SFO , 
+   add: At SFO JFK , 
+   delete: At SFO DTW , 
+
+Fly SFO DTW C 
+   precond: Airport DTW , At SFO DTW , Cargo SFO , 
+   add: At SFO C , 
+   delete: At SFO DTW , 
+
+Fly SFO DTW B 
+   precond: Airport DTW , At SFO DTW , Cargo SFO , 
+   add: At SFO B , 
+   delete: At SFO DTW , 
+
+Fly SFO DTW LAX 
+   precond: Airport DTW , At SFO DTW , Cargo SFO , 
+   add: At SFO LAX , 
+   delete: At SFO DTW , 
+
+Fly DTW A JFK 
+   precond: At DTW A , Airport A , Cargo DTW , 
+   add: At DTW JFK , 
+   delete: At DTW A , 
+
+Fly DTW A C 
+   precond: At DTW A , Airport A , Cargo DTW , 
+   add: At DTW C , 
+   delete: At DTW A , 
+
+Fly DTW A B 
+   precond: At DTW A , Airport A , Cargo DTW , 
+   add: At DTW B , 
+   delete: At DTW A , 
+
+Fly DTW A LAX 
+   precond: At DTW A , Airport A , Cargo DTW , 
+   add: At DTW LAX , 
+   delete: At DTW A , 
+
+Fly DTW A SFO 
+   precond: At DTW A , Airport A , Cargo DTW , 
+   add: At DTW SFO , 
+   delete: At DTW A , 
+
+Fly DTW JFK A 
+   precond: At DTW JFK , Airport JFK , Cargo DTW , 
+   add: At DTW A , 
+   delete: At DTW JFK , 
+
+Fly DTW JFK C 
+   precond: At DTW JFK , Airport JFK , Cargo DTW , 
+   add: At DTW C , 
+   delete: At DTW JFK , 
+
+Fly DTW JFK B 
+   precond: At DTW JFK , Airport JFK , Cargo DTW , 
+   add: At DTW B , 
+   delete: At DTW JFK , 
+
+Fly DTW JFK LAX 
+   precond: At DTW JFK , Airport JFK , Cargo DTW , 
+   add: At DTW LAX , 
+   delete: At DTW JFK , 
+
+Fly DTW JFK SFO 
+   precond: At DTW JFK , Airport JFK , Cargo DTW , 
+   add: At DTW SFO , 
+   delete: At DTW JFK , 
+
+Fly DTW C A 
+   precond: At DTW C , Airport C , Cargo DTW , 
+   add: At DTW A , 
+   delete: At DTW C , 
+
+Fly DTW C JFK 
+   precond: At DTW C , Airport C , Cargo DTW , 
+   add: At DTW JFK , 
+   delete: At DTW C , 
+
+Fly DTW C B 
+   precond: At DTW C , Airport C , Cargo DTW , 
+   add: At DTW B , 
+   delete: At DTW C , 
+
+Fly DTW C LAX 
+   precond: At DTW C , Airport C , Cargo DTW , 
+   add: At DTW LAX , 
+   delete: At DTW C , 
+
+Fly DTW C SFO 
+   precond: At DTW C , Airport C , Cargo DTW , 
+   add: At DTW SFO , 
+   delete: At DTW C , 
+
+Fly DTW B A 
+   precond: At DTW B , Airport B , Cargo DTW , 
+   add: At DTW A , 
+   delete: At DTW B , 
+
+Fly DTW B JFK 
+   precond: At DTW B , Airport B , Cargo DTW , 
+   add: At DTW JFK , 
+   delete: At DTW B , 
+
+Fly DTW B C 
+   precond: At DTW B , Airport B , Cargo DTW , 
+   add: At DTW C , 
+   delete: At DTW B , 
+
+Fly DTW B LAX 
+   precond: At DTW B , Airport B , Cargo DTW , 
+   add: At DTW LAX , 
+   delete: At DTW B , 
+
+Fly DTW B SFO 
+   precond: At DTW B , Airport B , Cargo DTW , 
+   add: At DTW SFO , 
+   delete: At DTW B , 
+
+Fly DTW LAX A 
+   precond: Airport LAX , At DTW LAX , Cargo DTW , 
+   add: At DTW A , 
+   delete: At DTW LAX , 
+
+Fly DTW LAX JFK 
+   precond: Airport LAX , At DTW LAX , Cargo DTW , 
+   add: At DTW JFK , 
+   delete: At DTW LAX , 
+
+Fly DTW LAX C 
+   precond: Airport LAX , At DTW LAX , Cargo DTW , 
+   add: At DTW C , 
+   delete: At DTW LAX , 
+
+Fly DTW LAX B 
+   precond: Airport LAX , At DTW LAX , Cargo DTW , 
+   add: At DTW B , 
+   delete: At DTW LAX , 
+
+Fly DTW LAX SFO 
+   precond: Airport LAX , At DTW LAX , Cargo DTW , 
+   add: At DTW SFO , 
+   delete: At DTW LAX , 
+
+Fly DTW SFO A 
+   precond: At DTW SFO , Airport SFO , Cargo DTW , 
+   add: At DTW A , 
+   delete: At DTW SFO , 
+
+Fly DTW SFO JFK 
+   precond: At DTW SFO , Airport SFO , Cargo DTW , 
+   add: At DTW JFK , 
+   delete: At DTW SFO , 
+
+Fly DTW SFO C 
+   precond: At DTW SFO , Airport SFO , Cargo DTW , 
+   add: At DTW C , 
+   delete: At DTW SFO , 
+
+Fly DTW SFO B 
+   precond: At DTW SFO , Airport SFO , Cargo DTW , 
+   add: At DTW B , 
+   delete: At DTW SFO , 
+
+Fly DTW SFO LAX 
+   precond: At DTW SFO , Airport SFO , Cargo DTW , 
+   add: At DTW LAX , 
+   delete: At DTW SFO , 
+
+210
+0
+Cargo A 
+Airport JFK 
+At A JFK 
+1
+Cargo A 
+Airport JFK 
+At A JFK 
+2
+Cargo A 
+Airport JFK 
+At A JFK 
+3
+Cargo A 
+Airport JFK 
+At A JFK 
+4
+Cargo A 
+Airport JFK 
+At A JFK 
+5
+Cargo A 
+At A C 
+Airport C 
+6
+Cargo A 
+At A C 
+Airport C 
+7
+Cargo A 
+At A C 
+Airport C 
+8
+Cargo A 
+At A C 
+Airport C 
+9
+Cargo A 
+At A C 
+Airport C 
+10
+Cargo A 
+At A B 
+Airport B 
+11
+Cargo A 
+At A B 
+Airport B 
+12
+Cargo A 
+At A B 
+Airport B 
+13
+Cargo A 
+At A B 
+Airport B 
+14
+Cargo A 
+At A B 
+Airport B 
+15
+Airport LAX 
+Cargo A 
+At A LAX 
+16
+Airport LAX 
+Cargo A 
+At A LAX 
+17
+Airport LAX 
+Cargo A 
+At A LAX 
+18
+Airport LAX 
+Cargo A 
+At A LAX 
+19
+Airport LAX 
+Cargo A 
+At A LAX 
+20
+Cargo A 
+Airport SFO 
+At A SFO 
+21
+Cargo A 
+Airport SFO 
+At A SFO 
+22
+Cargo A 
+Airport SFO 
+At A SFO 
+23
+Cargo A 
+Airport SFO 
+At A SFO 
+24
+Cargo A 
+Airport SFO 
+At A SFO 
+25
+Airport DTW 
+Cargo A 
+At A DTW 
+26
+Airport DTW 
+Cargo A 
+At A DTW 
+27
+Airport DTW 
+Cargo A 
+At A DTW 
+28
+Airport DTW 
+Cargo A 
+At A DTW 
+29
+Airport DTW 
+Cargo A 
+At A DTW 
+30
+Cargo JFK 
+Airport A 
+At JFK A 
+31
+Cargo JFK 
+Airport A 
+At JFK A 
+32
+Cargo JFK 
+Airport A 
+At JFK A 
+33
+Cargo JFK 
+Airport A 
+At JFK A 
+34
+Cargo JFK 
+Airport A 
+At JFK A 
+35
+Cargo JFK 
+At JFK C 
+Airport C 
+36
+Cargo JFK 
+At JFK C 
+Airport C 
+37
+Cargo JFK 
+At JFK C 
+Airport C 
+38
+Cargo JFK 
+At JFK C 
+Airport C 
+39
+Cargo JFK 
+At JFK C 
+Airport C 
+40
+Cargo JFK 
+At JFK B 
+Airport B 
+41
+Cargo JFK 
+At JFK B 
+Airport B 
+42
+Cargo JFK 
+At JFK B 
+Airport B 
+43
+Cargo JFK 
+At JFK B 
+Airport B 
+44
+Cargo JFK 
+At JFK B 
+Airport B 
+45
+Airport LAX 
+Cargo JFK 
+At JFK LAX 
+46
+Airport LAX 
+Cargo JFK 
+At JFK LAX 
+47
+Airport LAX 
+Cargo JFK 
+At JFK LAX 
+48
+Airport LAX 
+Cargo JFK 
+At JFK LAX 
+49
+Airport LAX 
+Cargo JFK 
+At JFK LAX 
+50
+Cargo JFK 
+Airport SFO 
+At JFK SFO 
+51
+Cargo JFK 
+Airport SFO 
+At JFK SFO 
+52
+Cargo JFK 
+Airport SFO 
+At JFK SFO 
+53
+Cargo JFK 
+Airport SFO 
+At JFK SFO 
+54
+Cargo JFK 
+Airport SFO 
+At JFK SFO 
+55
+Airport DTW 
+Cargo JFK 
+At JFK DTW 
+56
+Airport DTW 
+Cargo JFK 
+At JFK DTW 
+57
+Airport DTW 
+Cargo JFK 
+At JFK DTW 
+58
+Airport DTW 
+Cargo JFK 
+At JFK DTW 
+59
+Airport DTW 
+Cargo JFK 
+At JFK DTW 
+60
+At C A 
+Airport A 
+Cargo C 
+61
+At C A 
+Airport A 
+Cargo C 
+62
+At C A 
+Airport A 
+Cargo C 
+63
+At C A 
+Airport A 
+Cargo C 
+64
+At C A 
+Airport A 
+Cargo C 
+65
+At C JFK 
+Airport JFK 
+Cargo C 
+66
+At C JFK 
+Airport JFK 
+Cargo C 
+67
+At C JFK 
+Airport JFK 
+Cargo C 
+68
+At C JFK 
+Airport JFK 
+Cargo C 
+69
+At C JFK 
+Airport JFK 
+Cargo C 
+70
+At C B 
+Cargo C 
+Airport B 
+71
+At C B 
+Cargo C 
+Airport B 
+72
+At C B 
+Cargo C 
+Airport B 
+73
+At C B 
+Cargo C 
+Airport B 
+74
+At C B 
+Cargo C 
+Airport B 
+75
+Airport LAX 
+Cargo C 
+At C LAX 
+76
+Airport LAX 
+Cargo C 
+At C LAX 
+77
+Airport LAX 
+Cargo C 
+At C LAX 
+78
+Airport LAX 
+Cargo C 
+At C LAX 
+79
+Airport LAX 
+Cargo C 
+At C LAX 
+80
+At C SFO 
+Airport SFO 
+Cargo C 
+81
+At C SFO 
+Airport SFO 
+Cargo C 
+82
+At C SFO 
+Airport SFO 
+Cargo C 
+83
+At C SFO 
+Airport SFO 
+Cargo C 
+84
+At C SFO 
+Airport SFO 
+Cargo C 
+85
+Airport DTW 
+Cargo C 
+At C DTW 
+86
+Airport DTW 
+Cargo C 
+At C DTW 
+87
+Airport DTW 
+Cargo C 
+At C DTW 
+88
+Airport DTW 
+Cargo C 
+At C DTW 
+89
+Airport DTW 
+Cargo C 
+At C DTW 
+90
+Airport A 
+At B A 
+Cargo B 
+91
+Airport A 
+At B A 
+Cargo B 
+92
+Airport A 
+At B A 
+Cargo B 
+93
+Airport A 
+At B A 
+Cargo B 
+94
+Airport A 
+At B A 
+Cargo B 
+95
+Airport JFK 
+At B JFK 
+Cargo B 
+96
+Airport JFK 
+At B JFK 
+Cargo B 
+97
+Airport JFK 
+At B JFK 
+Cargo B 
+98
+Airport JFK 
+At B JFK 
+Cargo B 
+99
+Airport JFK 
+At B JFK 
+Cargo B 
+100
+At B C 
+Airport C 
+Cargo B 
+101
+At B C 
+Airport C 
+Cargo B 
+102
+At B C 
+Airport C 
+Cargo B 
+103
+At B C 
+Airport C 
+Cargo B 
+104
+At B C 
+Airport C 
+Cargo B 
+105
+Airport LAX 
+At B LAX 
+Cargo B 
+106
+Airport LAX 
+At B LAX 
+Cargo B 
+107
+Airport LAX 
+At B LAX 
+Cargo B 
+108
+Airport LAX 
+At B LAX 
+Cargo B 
+109
+Airport LAX 
+At B LAX 
+Cargo B 
+110
+Airport SFO 
+Cargo B 
+At B SFO 
+111
+Airport SFO 
+Cargo B 
+At B SFO 
+112
+Airport SFO 
+Cargo B 
+At B SFO 
+113
+Airport SFO 
+Cargo B 
+At B SFO 
+114
+Airport SFO 
+Cargo B 
+At B SFO 
+115
+Airport DTW 
+At B DTW 
+Cargo B 
+116
+Airport DTW 
+At B DTW 
+Cargo B 
+117
+Airport DTW 
+At B DTW 
+Cargo B 
+118
+Airport DTW 
+At B DTW 
+Cargo B 
+119
+Airport DTW 
+At B DTW 
+Cargo B 
+120
+At LAX A 
+Airport A 
+Cargo LAX 
+121
+At LAX A 
+Airport A 
+Cargo LAX 
+122
+At LAX A 
+Airport A 
+Cargo LAX 
+123
+At LAX A 
+Airport A 
+Cargo LAX 
+124
+At LAX A 
+Airport A 
+Cargo LAX 
+125
+At LAX JFK 
+Airport JFK 
+Cargo LAX 
+126
+At LAX JFK 
+Airport JFK 
+Cargo LAX 
+127
+At LAX JFK 
+Airport JFK 
+Cargo LAX 
+128
+At LAX JFK 
+Airport JFK 
+Cargo LAX 
+129
+At LAX JFK 
+Airport JFK 
+Cargo LAX 
+130
+At LAX C 
+Airport C 
+Cargo LAX 
+131
+At LAX C 
+Airport C 
+Cargo LAX 
+132
+At LAX C 
+Airport C 
+Cargo LAX 
+133
+At LAX C 
+Airport C 
+Cargo LAX 
+134
+At LAX C 
+Airport C 
+Cargo LAX 
+135
+At LAX B 
+Airport B 
+Cargo LAX 
+136
+At LAX B 
+Airport B 
+Cargo LAX 
+137
+At LAX B 
+Airport B 
+Cargo LAX 
+138
+At LAX B 
+Airport B 
+Cargo LAX 
+139
+At LAX B 
+Airport B 
+Cargo LAX 
+140
+At LAX SFO 
+Airport SFO 
+Cargo LAX 
+141
+At LAX SFO 
+Airport SFO 
+Cargo LAX 
+142
+At LAX SFO 
+Airport SFO 
+Cargo LAX 
+143
+At LAX SFO 
+Airport SFO 
+Cargo LAX 
+144
+At LAX SFO 
+Airport SFO 
+Cargo LAX 
+145
+Airport DTW 
+At LAX DTW 
+Cargo LAX 
+146
+Airport DTW 
+At LAX DTW 
+Cargo LAX 
+147
+Airport DTW 
+At LAX DTW 
+Cargo LAX 
+148
+Airport DTW 
+At LAX DTW 
+Cargo LAX 
+149
+Airport DTW 
+At LAX DTW 
+Cargo LAX 
+150
+At SFO A 
+Airport A 
+Cargo SFO 
+151
+At SFO A 
+Airport A 
+Cargo SFO 
+152
+At SFO A 
+Airport A 
+Cargo SFO 
+153
+At SFO A 
+Airport A 
+Cargo SFO 
+154
+At SFO A 
+Airport A 
+Cargo SFO 
+155
+Airport JFK 
+At SFO JFK 
+Cargo SFO 
+156
+Airport JFK 
+At SFO JFK 
+Cargo SFO 
+157
+Airport JFK 
+At SFO JFK 
+Cargo SFO 
+158
+Airport JFK 
+At SFO JFK 
+Cargo SFO 
+159
+Airport JFK 
+At SFO JFK 
+Cargo SFO 
+160
+Cargo SFO 
+At SFO C 
+Airport C 
+161
+Cargo SFO 
+At SFO C 
+Airport C 
+162
+Cargo SFO 
+At SFO C 
+Airport C 
+163
+Cargo SFO 
+At SFO C 
+Airport C 
+164
+Cargo SFO 
+At SFO C 
+Airport C 
+165
+Cargo SFO 
+Airport B 
+At SFO B 
+166
+Cargo SFO 
+Airport B 
+At SFO B 
+167
+Cargo SFO 
+Airport B 
+At SFO B 
+168
+Cargo SFO 
+Airport B 
+At SFO B 
+169
+Cargo SFO 
+Airport B 
+At SFO B 
+170
+Airport LAX 
+At SFO LAX 
+Cargo SFO 
+171
+Airport LAX 
+At SFO LAX 
+Cargo SFO 
+172
+Airport LAX 
+At SFO LAX 
+Cargo SFO 
+173
+Airport LAX 
+At SFO LAX 
+Cargo SFO 
+174
+Airport LAX 
+At SFO LAX 
+Cargo SFO 
+175
+Airport DTW 
+At SFO DTW 
+Cargo SFO 
+176
+Airport DTW 
+At SFO DTW 
+Cargo SFO 
+177
+Airport DTW 
+At SFO DTW 
+Cargo SFO 
+178
+Airport DTW 
+At SFO DTW 
+Cargo SFO 
+179
+Airport DTW 
+At SFO DTW 
+Cargo SFO 
+180
+At DTW A 
+Airport A 
+Cargo DTW 
+181
+At DTW A 
+Airport A 
+Cargo DTW 
+182
+At DTW A 
+Airport A 
+Cargo DTW 
+183
+At DTW A 
+Airport A 
+Cargo DTW 
+184
+At DTW A 
+Airport A 
+Cargo DTW 
+185
+At DTW JFK 
+Airport JFK 
+Cargo DTW 
+186
+At DTW JFK 
+Airport JFK 
+Cargo DTW 
+187
+At DTW JFK 
+Airport JFK 
+Cargo DTW 
+188
+At DTW JFK 
+Airport JFK 
+Cargo DTW 
+189
+At DTW JFK 
+Airport JFK 
+Cargo DTW 
+190
+At DTW C 
+Airport C 
+Cargo DTW 
+191
+At DTW C 
+Airport C 
+Cargo DTW 
+192
+At DTW C 
+Airport C 
+Cargo DTW 
+193
+At DTW C 
+Airport C 
+Cargo DTW 
+194
+At DTW C 
+Airport C 
+Cargo DTW 
+195
+At DTW B 
+Airport B 
+Cargo DTW 
+196
+At DTW B 
+Airport B 
+Cargo DTW 
+197
+At DTW B 
+Airport B 
+Cargo DTW 
+198
+At DTW B 
+Airport B 
+Cargo DTW 
+199
+At DTW B 
+Airport B 
+Cargo DTW 
+200
+Airport LAX 
+At DTW LAX 
+Cargo DTW 
+201
+Airport LAX 
+At DTW LAX 
+Cargo DTW 
+202
+Airport LAX 
+At DTW LAX 
+Cargo DTW 
+203
+Airport LAX 
+At DTW LAX 
+Cargo DTW 
+204
+Airport LAX 
+At DTW LAX 
+Cargo DTW 
+205
+At DTW SFO 
+Airport SFO 
+Cargo DTW 
+206
+At DTW SFO 
+Airport SFO 
+Cargo DTW 
+207
+At DTW SFO 
+Airport SFO 
+Cargo DTW 
+208
+At DTW SFO 
+Airport SFO 
+Cargo DTW 
+209
+At DTW SFO 
+Airport SFO 
+Cargo DTW 
+At B DTW 
+Airport SFO 
+Airport JFK 
+Cargo B 
+Airport DTW 
+Cargo A 
+Cargo C 
+At A SFO 
+Airport LAX 
+At C JFK 
+updating...
+update done 
+
+At B DTW 
+Airport SFO 
+Airport JFK 
+Cargo B 
+Airport DTW 
+Cargo A 
+Cargo C 
+At A SFO 
+Airport LAX 
+At C JFK 
+False

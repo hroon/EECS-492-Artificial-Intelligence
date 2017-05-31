@@ -1,0 +1,72 @@
+nrows = 4 ncols = 4
+water level = 10 power level = 100
+amount per watering = 1
+power required for...
+...watering = 1
+...weeding = 1
+...moving = 1
+...sensing = 1
+places left to weed = 4
+places left to water = 5
+agentpos = ( 0 ,  1 ) facing east
+  0  1  2  3  
+0 xx TT FF TT 
+1 xx xx xx FT 
+2 xx FF FT TF 
+3 xx TF TF FF 
+
+start
+needs_watering
+watering_succeeded
+needs_weeding
+weeding_succeeded
+move_succeeded
+does_not_need_watering
+does_not_need_weeding
+move_succeeded
+needs_watering
+watering_succeeded
+needs_weeding
+weeding_succeeded
+hit_barrier
+move_succeeded
+does_not_need_watering
+needs_weeding
+weeding_succeeded
+move_succeeded
+needs_watering
+watering_succeeded
+does_not_need_weeding
+move_succeeded
+does_not_need_watering
+does_not_need_weeding
+hit_barrier
+move_succeeded
+needs_watering
+watering_succeeded
+does_not_need_weeding
+move_succeeded
+needs_watering
+watering_succeeded
+does_not_need_weeding
+hit_barrier
+move_succeeded
+does_not_need_watering
+does_not_need_weeding
+hit_barrier
+move_succeeded
+does_not_need_watering
+needs_weeding
+succeeded
+Number of moves =  42
+Water level at end =  5
+Power level at end =  58
+Left to water at end =  0
+Left to weed at end =  0
+agentpos = ( 2 ,  2 ) facing east
+  0  1  2  3  
+0 xx FF FF FF 
+1 xx xx xx FF 
+2 xx FF FF FF 
+3 xx FF FF FF 
+
